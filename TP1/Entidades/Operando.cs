@@ -119,10 +119,18 @@ namespace Entidades
         {
             this.numero = 0;
         }
+        /// <summary>
+        /// Constructor con parametro double para asignar 
+        /// </summary>
+        /// <param name="numero">Numero double recibido</param>
         public Operando(double numero)
         {
             this.numero = numero;
         }
+        /// <summary>
+        /// Constructor con parametro string para asignar
+        /// </summary>
+        /// <param name="strNumero">Numero string recibido</param>
         public Operando(string strNumero) : this()
         {
             Numero = strNumero;

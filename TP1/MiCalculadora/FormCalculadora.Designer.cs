@@ -29,6 +29,7 @@ namespace MiCalculadora
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCalculadora));
             this.cmbOperador = new System.Windows.Forms.ComboBox();
             this.txtNumero1 = new System.Windows.Forms.TextBox();
             this.txtNumero2 = new System.Windows.Forms.TextBox();
@@ -128,9 +129,9 @@ namespace MiCalculadora
             this.lstOperaciones.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lstOperaciones.FormattingEnabled = true;
             this.lstOperaciones.ItemHeight = 21;
-            this.lstOperaciones.Location = new System.Drawing.Point(585, 41);
+            this.lstOperaciones.Location = new System.Drawing.Point(585, 83);
             this.lstOperaciones.Name = "lstOperaciones";
-            this.lstOperaciones.Size = new System.Drawing.Size(192, 319);
+            this.lstOperaciones.Size = new System.Drawing.Size(192, 340);
             this.lstOperaciones.TabIndex = 4;
             // 
             // lblResultado
@@ -162,6 +163,7 @@ namespace MiCalculadora
             this.Controls.Add(this.txtNumero1);
             this.Controls.Add(this.cmbOperador);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCalculadora";
