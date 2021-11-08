@@ -7,6 +7,7 @@ namespace TestTP3
         static void Main(string[] args)
         {
             Empresa empresa = new Empresa("Mountain",3);
+            GestorArchivo gda = new GestorArchivo();
             Empleado e1 = new Programador("56", "Juan", "Sueldo", "67890", Genero.Masculino, Tipo.BackEnd);
             Empleado e2 = new RecursosHumanos("67", "Ariel", "Gallardo", "65400",Genero.Masculino);
             Empleado e3 = new Programador("77", "Yamila", "Sueldo", "71900",Genero.Femenino, Tipo.FontEnd);
@@ -71,15 +72,15 @@ namespace TestTP3
             }
             try
             {
-                Empresa.GuardarDatos(empresa);
-                Console.WriteLine("Datos Guardados");      
+                 gda.Tipo = IArchivos<Empresa>.ETipoArchivo.XML;
+                 ((IArchivos<Empresa>)gda).Escribir(empresa, "empresa.json");
+                 Console.WriteLine("Datos Guardados");
             }
-            catch(ArchivosException ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
             Console.ReadKey();
-
         }
     }
 }

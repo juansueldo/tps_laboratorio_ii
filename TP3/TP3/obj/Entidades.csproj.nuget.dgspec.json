@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Juan\\Desktop\\Tps\\TP3\\TP3\\Entidades.csproj": {}
+    "C:\\Users\\Juan\\Desktop\\tps_laboratorio_ii\\TP3\\TP3\\Entidades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Juan\\Desktop\\Tps\\TP3\\TP3\\Entidades.csproj": {
+    "C:\\Users\\Juan\\Desktop\\tps_laboratorio_ii\\TP3\\TP3\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juan\\Desktop\\Tps\\TP3\\TP3\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Juan\\Desktop\\tps_laboratorio_ii\\TP3\\TP3\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Juan\\Desktop\\Tps\\TP3\\TP3\\Entidades.csproj",
+        "projectPath": "C:\\Users\\Juan\\Desktop\\tps_laboratorio_ii\\TP3\\TP3\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Juan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juan\\Desktop\\Tps\\TP3\\TP3\\obj\\",
+        "outputPath": "C:\\Users\\Juan\\Desktop\\tps_laboratorio_ii\\TP3\\TP3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Juan\\AppData\\Roaming\\NuGet\\NuGet.Config",

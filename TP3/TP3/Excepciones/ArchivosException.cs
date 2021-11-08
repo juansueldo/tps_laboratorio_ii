@@ -13,5 +13,6 @@ namespace Entidades
 
         public ArchivosException(string mensaje, Exception innerException)
             : base(mensaje, innerException) { }
+        public ArchivosException(string mensaje) :base(mensaje){ }
     }
 }

@@ -8,8 +8,8 @@ namespace Entidades
 {
     public interface IArchivos<T> where T : class
     {
-        public bool Guardar(string archivo, T datos);
-
-        public bool Leer(string archivo, out T datos);
+        public enum ETipoArchivo { XML, JSON };
+        T Leer(string path);
+        void Escribir(T dato, string path);
     }
 }

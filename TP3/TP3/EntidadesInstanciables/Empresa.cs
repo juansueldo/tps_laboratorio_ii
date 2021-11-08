@@ -92,11 +92,6 @@ namespace Entidades
              }
             return empresa;
         }
-        public static void GuardarDatos(Empresa empresa)
-        {
-            string ruta = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), String.Format(@"Empresa.xml", empresa));
-            Xml<Empresa>.SerializarAXml(empresa, ruta);
-        }
         
     }
 }

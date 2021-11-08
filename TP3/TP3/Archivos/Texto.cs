@@ -1,47 +1,41 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.IO;
-using System.Threading.Tasks;
 
 namespace Entidades
 {
     public class Texto : IArchivos<string>
     {
-        public bool Guardar(string archivo, string datos)
+        public void Escribir(string dato, string path)
         {
-            bool retorno = false;
             try
             {
-                using (StreamWriter stream = new StreamWriter(archivo, false))
+                using (StreamWriter streamWriter = new StreamWriter(path))
                 {
-                    stream.Write(datos);
-                    retorno = true;
+                    streamWriter.WriteLine(dato);
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw new ArchivosException(e);
+                throw;
             }
-            return retorno;
         }
-        public bool Leer(string archivo, out string datos)
+
+        public string Leer(string path)
         {
-            datos = "";
-            bool retorno = false;
+            string retorno = string.Empty;
             try
             {
-                using (StreamReader sr = new StreamReader(archivo))
+                using (StreamReader streamReader = new StreamReader(path))
                 {
-                    datos = (string)sr.ReadToEnd();
-                    sr.Close();
-                    retorno = true;
+                    while (!streamReader.EndOfStream)
+                    {
+                        retorno += $"{streamReader.ReadLine()}\n";
+                    }
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw new ArchivosException(e);
+                throw;
             }
             return retorno;
         }
