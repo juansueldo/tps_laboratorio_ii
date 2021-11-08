@@ -59,6 +59,7 @@ namespace Entidades
             : this(nombre,apellido,genero)
         {
             this.LegajoString = legajo;
+            this.SueldoString = sueldo;
         }
         public static bool operator == (Empleado empleadoA, Empleado empleadoB)
         {
@@ -85,7 +86,10 @@ namespace Entidades
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine($"[Legajo] {this.legajo}, [Nombre y apellido] {this.nombre +' '+ this.apellido}, [Genero] {this.genero} [Sueldo] ${this.sueldo}");
+            sb.AppendLine($"[Legajo] {this.legajo}");
+            sb.AppendLine($"[Nombre y apellido] {this.nombre + ' ' + this.apellido}");
+            sb.AppendLine($"[Genero] {this.genero}");
+            sb.AppendLine($"[Sueldo] ${this.sueldo}");
             
             return sb.ToString();
         }

@@ -52,6 +52,7 @@ namespace FormEmpresa
             this.lblGenero = new System.Windows.Forms.Label();
             this.rchSector = new System.Windows.Forms.RichTextBox();
             this.rchPuesto = new System.Windows.Forms.RichTextBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtLegajo
@@ -159,7 +160,7 @@ namespace FormEmpresa
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(155, 413);
+            this.btnSalir.Location = new System.Drawing.Point(28, 456);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(121, 36);
             this.btnSalir.TabIndex = 13;
@@ -235,25 +236,36 @@ namespace FormEmpresa
             // 
             // rchSector
             // 
-            this.rchSector.Location = new System.Drawing.Point(315, 385);
+            this.rchSector.Location = new System.Drawing.Point(315, 342);
             this.rchSector.Name = "rchSector";
-            this.rchSector.Size = new System.Drawing.Size(531, 31);
+            this.rchSector.Size = new System.Drawing.Size(659, 31);
             this.rchSector.TabIndex = 22;
             this.rchSector.Text = "";
             // 
             // rchPuesto
             // 
-            this.rchPuesto.Location = new System.Drawing.Point(315, 446);
+            this.rchPuesto.Location = new System.Drawing.Point(315, 395);
             this.rchPuesto.Name = "rchPuesto";
-            this.rchPuesto.Size = new System.Drawing.Size(531, 31);
+            this.rchPuesto.Size = new System.Drawing.Size(659, 31);
             this.rchPuesto.TabIndex = 23;
             this.rchPuesto.Text = "";
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(155, 413);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(121, 36);
+            this.btnGuardar.TabIndex = 24;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // FormEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 489);
+            this.ClientSize = new System.Drawing.Size(1042, 504);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.rchPuesto);
             this.Controls.Add(this.rchSector);
             this.Controls.Add(this.lblGenero);
@@ -311,6 +323,7 @@ namespace FormEmpresa
         private System.Windows.Forms.Label lblGenero;
         private System.Windows.Forms.RichTextBox rchSector;
         private System.Windows.Forms.RichTextBox rchPuesto;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }
 

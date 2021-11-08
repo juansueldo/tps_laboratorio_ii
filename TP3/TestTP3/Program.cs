@@ -72,7 +72,7 @@ namespace TestTP3
             }
             try
             {
-                 gda.Tipo = IArchivos<Empresa>.ETipoArchivo.XML;
+                 gda.Tipo = IArchivos<Empresa>.ETipoArchivo.JSON;
                  ((IArchivos<Empresa>)gda).Escribir(empresa, "empresa.json");
                  Console.WriteLine("Datos Guardados");
             }

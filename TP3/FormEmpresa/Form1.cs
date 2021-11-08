@@ -14,6 +14,7 @@ namespace FormEmpresa
     public partial class FormEmpleados : Form
     {
         Empresa empresa = new Empresa("Mountain", 10);
+        GestorArchivo gda = new GestorArchivo();
         public FormEmpleados()
         {
             InitializeComponent();
@@ -154,5 +155,18 @@ namespace FormEmpresa
             this.rchPuesto.Text = estadisticas.EmpleadosPorSector(empresa);
         }
 
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                gda.Tipo = IArchivos<Empresa>.ETipoArchivo.JSON;
+                ((IArchivos<Empresa>)gda).Escribir(empresa, "empresa.json");
+                MessageBox.Show("Datos Guardados");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

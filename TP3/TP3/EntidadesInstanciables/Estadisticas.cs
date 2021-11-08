@@ -13,6 +13,7 @@ namespace Entidades
 
         public string CantidadEmpleadosPorGenero(Empresa empresa)
         {
+            StringBuilder sb = new StringBuilder();
             int femenino = 0;
             int masculino = 0;
             int noBinario = 0;
@@ -31,10 +32,14 @@ namespace Entidades
                     noBinario++;
                 }
             }
-            return $"Empleados genero no binario {noBinario}, genero femenino {femenino}, genero masculino {masculino}";
+            sb.AppendLine($"Empleados genero no binario: {noBinario}");
+            sb.AppendLine($"Empleados genero femenino: {femenino}");
+            sb.AppendLine($"Empleados genero masculino: {masculino}");
+            return sb.ToString();
         }
         public string EmpleadosPorSector(Empresa empresa)
         {
+            StringBuilder sb = new StringBuilder();
             int programadores = 0;
             int rrhh = 0;
             foreach (Empleado item in empresa.empleados)
@@ -48,7 +53,9 @@ namespace Entidades
                     rrhh++;
                 }
             }
-            return $"Cantidad de Programadores {programadores}, cantidad de RRHH {rrhh}";
+            sb.AppendLine($"Cantidad Programadores: {programadores}");
+            sb.AppendLine($"Cantidad RRHH: {rrhh}");
+            return sb.ToString();
         }
     }
 }
