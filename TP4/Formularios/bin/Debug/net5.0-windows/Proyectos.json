@@ -1,0 +1,17 @@
+{
+  "Nombre": "Final Fantasy VII",
+  "FechaInicio": "2021-11-21T14:38:36.6563052-03:00",
+  "FechaLanzamiento": "2021-11-21T14:38:36.6313861-03:00",
+  "IdSoftware": 1,
+  "GeneroJuego": 1,
+  "Programadores": [
+    {
+      "Nombre": "Juan",
+      "Apellido": "Suedlo",
+      "Genero": 2,
+      "Puesto": 1,
+      "Legajo": 35,
+      "Edad": 0
+    }
+  ]
+}
