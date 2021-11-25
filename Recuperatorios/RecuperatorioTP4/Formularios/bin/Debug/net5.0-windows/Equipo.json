@@ -1,0 +1,10 @@
+[
+  {
+    "Nombre": "Juan",
+    "Apellido": "Sueldo",
+    "Genero": "Masculino",
+    "Legajo": 1,
+    "Edad": 32,
+    "Puesto": "Designer"
+  }
+]

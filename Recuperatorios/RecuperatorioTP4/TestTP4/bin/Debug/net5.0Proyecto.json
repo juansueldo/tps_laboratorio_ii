@@ -1,0 +1,40 @@
+{
+  "Nombre": "Final Fantasy XVI",
+  "Id": 5,
+  "Programadores": [
+    {
+      "Nombre": "Juan",
+      "Apellido": "Sueldo",
+      "Genero": "Masculino",
+      "Legajo": 1,
+      "Edad": 32,
+      "Puesto": "Tester"
+    },
+    {
+      "Nombre": "Tetsuya",
+      "Apellido": "Nomura",
+      "Genero": "Masculino",
+      "Legajo": 2,
+      "Edad": 51,
+      "Puesto": "Designer"
+    },
+    {
+      "Nombre": "Hironobu",
+      "Apellido": "Sakaguchi",
+      "Genero": "Masculino",
+      "Legajo": 3,
+      "Edad": 58,
+      "Puesto": "Designer"
+    },
+    {
+      "Nombre": "Yoshitaka",
+      "Apellido": "Amano",
+      "Genero": "Masculino",
+      "Legajo": 4,
+      "Edad": 69,
+      "Puesto": "Artist"
+    }
+  ],
+  "FechaLanzamiento": "2021-11-24T00:00:00-03:00",
+  "GeneroJuego": "RPG"
+}
