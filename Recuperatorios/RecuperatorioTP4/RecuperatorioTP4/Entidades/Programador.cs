@@ -29,13 +29,14 @@ namespace Entidades
             this.edad = edad;
             this.Puesto = puesto;
         }
-        public Programador(string nombre, string apellido,Genero genero,Puesto puesto)
+        public Programador(string nombre, string apellido,Genero genero,Puesto puesto) :this()
         {
             this.nombre = nombre;
             this.apellido = apellido;
             this.genero = genero;
             this.puesto = puesto;
         }
+        public Programador() { }
         #endregion
 
         #region Propiedades
@@ -65,13 +66,9 @@ namespace Entidades
         public short Edad { get => edad;
             set 
             {
-                if(ValidadEdad(value))
+                if(ValidarEdad(value))
                 {
                     this.edad = value;
-                }
-                else
-                {
-                    throw new EdadException("Edad no valida");
                 }
                 
             } 
@@ -129,13 +126,18 @@ namespace Entidades
                 throw new LegajoValidarException("Valor no valido");
             }
         }
-        public bool ValidadEdad(short dato)
+        public bool ValidarEdad(short dato)
         {
+            bool retorno = false;
             if(dato >= 18 && dato <= 65)
             {
-                return true;
+                retorno = true;
             }
-            return false;
+            else
+            {
+                throw new EdadException("Edad no valida");
+            }
+            return retorno;
         }
         #endregion
     }

@@ -1,40 +1,31 @@
-{
-  "Nombre": "Final Fantasy XVI",
-  "Id": 5,
-  "Programadores": [
-    {
-      "Nombre": "Juan",
-      "Apellido": "Sueldo",
-      "Genero": "Masculino",
-      "Legajo": 1,
-      "Edad": 32,
-      "Puesto": "Tester"
-    },
-    {
-      "Nombre": "Tetsuya",
-      "Apellido": "Nomura",
-      "Genero": "Masculino",
-      "Legajo": 2,
-      "Edad": 51,
-      "Puesto": "Designer"
-    },
-    {
-      "Nombre": "Hironobu",
-      "Apellido": "Sakaguchi",
-      "Genero": "Masculino",
-      "Legajo": 3,
-      "Edad": 58,
-      "Puesto": "Designer"
-    },
-    {
-      "Nombre": "Yoshitaka",
-      "Apellido": "Amano",
-      "Genero": "Masculino",
-      "Legajo": 4,
-      "Edad": 69,
-      "Puesto": "Artist"
-    }
-  ],
-  "FechaLanzamiento": "2021-11-24T00:00:00-03:00",
-  "GeneroJuego": "RPG"
-}
+Nombre del proyecto Final Fantasy XVI
+ID 5
+Genero RPG
+Fecha de lanzamiento 25/11/2021 0:00:00
+EQUIPO:
+
+Nombre completo Juan Sueldo
+Legajo 1
+Genero Masculino
+Edad 32
+Puesto Tester
+
+Nombre completo Tetsuya Nomura
+Legajo 2
+Genero Masculino
+Edad 51
+Puesto Designer
+
+Nombre completo Hironobu Sakaguchi
+Legajo 3
+Genero Masculino
+Edad 58
+Puesto Designer
+
+Nombre completo Yoshitaka Amano
+Legajo 4
+Genero Masculino
+Edad 69
+Puesto Artist
+
+

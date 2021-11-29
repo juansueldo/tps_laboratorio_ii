@@ -31,3 +31,13 @@ C:\Users\operador\Desktop\Validar\tps_laboratorio_ii\Recuperatorios\TP2\TP-02\bi
 C:\Users\operador\Desktop\Validar\tps_laboratorio_ii\Recuperatorios\TP2\TP-02\bin\Debug\Entidades.pdb
 C:\Users\operador\Desktop\Validar\tps_laboratorio_ii\Recuperatorios\TP2\TP-02\obj\Debug\TP-02.csproj.CopyComplete
 C:\Users\operador\Desktop\Validar\tps_laboratorio_ii\Recuperatorios\TP2\TP-02\obj\Debug\TP-02.pdb
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\TP2\TP-02\bin\Debug\TP-02.exe.config
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\TP2\TP-02\bin\Debug\TP-02.exe
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\TP2\TP-02\bin\Debug\TP-02.pdb
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\TP2\TP-02\bin\Debug\Entidades.dll
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\TP2\TP-02\bin\Debug\Entidades.pdb
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\TP2\TP-02\obj\Debug\TP-02.csproj.AssemblyReference.cache
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\TP2\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\TP2\TP-02\obj\Debug\TP-02.csproj.CopyComplete
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\TP2\TP-02\obj\Debug\TP-02.exe
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\TP2\TP-02\obj\Debug\TP-02.pdb

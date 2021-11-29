@@ -44,10 +44,10 @@ namespace Formularios
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Harvest", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(170, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(411, 55);
+            this.label1.Size = new System.Drawing.Size(388, 53);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mountain Studios";
             // 
@@ -80,6 +80,7 @@ namespace Formularios
             this.btnSalir.TabIndex = 3;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnInformes
             // 
@@ -101,6 +102,7 @@ namespace Formularios
             this.btnMostrarTodo.TabIndex = 5;
             this.btnMostrarTodo.Text = "Mostrar Todo";
             this.btnMostrarTodo.UseVisualStyleBackColor = true;
+            this.btnMostrarTodo.Click += new System.EventHandler(this.btnMostrarTodo_Click);
             // 
             // groupBox1
             // 
@@ -129,6 +131,7 @@ namespace Formularios
             this.Name = "FormInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormInicio_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

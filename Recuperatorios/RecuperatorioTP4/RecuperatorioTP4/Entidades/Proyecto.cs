@@ -9,18 +9,23 @@ namespace Entidades
     public enum GeneroJuego { RPG, SHOOTER, ROGUELIKE}
     public class Proyecto
     {
+        #region Atributos
         private string nombre;
         private int id;
         private GeneroJuego generoJuego;
         private List<Programador> programadores;
         private DateTime fechaLanzamiento;
+        #endregion
 
+        #region Propiedades
         public string Nombre { get => nombre; set => nombre = value; }
         public int Id { get => id; set => id = value; }
         public List<Programador> Programadores { get => programadores; set => programadores = value; }
         public DateTime FechaLanzamiento { get => fechaLanzamiento; set => fechaLanzamiento = value; }
         public GeneroJuego GeneroJuego { get => generoJuego; set => generoJuego = value; }
+        #endregion
 
+        #region Constructores
         public Proyecto(string nombre, int id, GeneroJuego generoJuego, DateTime fechaLanzamiento) : this()
         {
             this.nombre = nombre;
@@ -32,6 +37,9 @@ namespace Entidades
         {
             Programadores = new List<Programador>();
         }
+        #endregion
+
+        #region Sobrecargas
         public static bool operator ==(Proyecto proyecto, Programador programador)
         {
             bool retorno = false;
@@ -72,6 +80,9 @@ namespace Entidades
             }
             return proyecto;
         }
+        #endregion
+
+        #region Metodos
         public string MostrarProyecto()
         {
             StringBuilder sb = new StringBuilder();
@@ -87,5 +98,6 @@ namespace Entidades
             }
             return sb.ToString();
         }
+        #endregion
     }
 }

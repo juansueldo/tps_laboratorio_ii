@@ -17,3 +17,9 @@ C:\Users\operador\Desktop\Validar\tps_laboratorio_ii\Recuperatorios\TP2\Entidade
 C:\Users\operador\Desktop\Validar\tps_laboratorio_ii\Recuperatorios\TP2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\operador\Desktop\Validar\tps_laboratorio_ii\Recuperatorios\TP2\Entidades\obj\Debug\Entidades.dll
 C:\Users\operador\Desktop\Validar\tps_laboratorio_ii\Recuperatorios\TP2\Entidades\obj\Debug\Entidades.pdb
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\TP2\Entidades\bin\Debug\Entidades.dll
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\TP2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\TP2\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\TP2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\TP2\Entidades\obj\Debug\Entidades.dll
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\TP2\Entidades\obj\Debug\Entidades.pdb

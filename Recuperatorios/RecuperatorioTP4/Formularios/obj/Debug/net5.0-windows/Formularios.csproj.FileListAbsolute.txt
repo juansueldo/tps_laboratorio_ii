@@ -54,3 +54,98 @@ C:\Users\Juan\Desktop\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runt
 C:\Users\Juan\Desktop\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Juan\Desktop\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Juan\Desktop\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.CopyComplete
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.exe
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.deps.json
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.runtimeconfig.json
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.runtimeconfig.dev.json
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.dll
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\ref\Formularios.dll
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.pdb
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.AssemblyReference.cache
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.FormEquipo.resources
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.FormInformes.resources
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.FormInicio.resources
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.FormProyecto.resources
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.Properties.Resources.resources
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.GenerateResource.cache
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.AssemblyInfoInputs.cache
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.AssemblyInfo.cs
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.CoreCompileInputs.cache
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.CopyComplete
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.dll
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\ref\Formularios.dll
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.pdb
+C:\Users\operador\Desktop\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.genruntimeconfig.cache
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.exe
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.deps.json
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.runtimeconfig.json
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.runtimeconfig.dev.json
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.dll
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\ref\Formularios.dll
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.pdb
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.AssemblyReference.cache
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.FormEquipo.resources
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.FormInformes.resources
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.FormInicio.resources
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.FormProyecto.resources
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.Properties.Resources.resources
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.GenerateResource.cache
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.AssemblyInfoInputs.cache
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.AssemblyInfo.cs
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.CoreCompileInputs.cache
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.CopyComplete
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.dll
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\ref\Formularios.dll
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.pdb
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.genruntimeconfig.cache
+C:\Users\operador\Desktop\Validar\Recu 2021\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.FormMostrarTodo.resources
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.exe
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.deps.json
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.runtimeconfig.json
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.runtimeconfig.dev.json
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.dll
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\ref\Formularios.dll
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Formularios.pdb
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.AssemblyReference.cache
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.FormEquipo.resources
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.FormInformes.resources
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.FormInicio.resources
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.FormMostrarTodo.resources
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.FormProyecto.resources
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.Properties.Resources.resources
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.GenerateResource.cache
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.AssemblyInfoInputs.cache
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.AssemblyInfo.cs
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.CoreCompileInputs.cache
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.dll
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\ref\Formularios.dll
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.pdb
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.genruntimeconfig.cache
+C:\Users\Juan\Desktop\x\tps_laboratorio_ii\Recuperatorios\RecuperatorioTP4\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.CopyComplete

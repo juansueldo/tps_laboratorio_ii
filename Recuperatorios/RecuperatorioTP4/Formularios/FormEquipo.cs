@@ -14,7 +14,8 @@ namespace Formularios
     public partial class FormEquipo : Form
     {
         Proyecto proyecto = new Proyecto();
-        string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Equipo.json";
+        Programador programador = new Programador();
+        string ruta = "Equipo.json";
         public FormEquipo()
         {
             InitializeComponent();
@@ -27,38 +28,33 @@ namespace Formularios
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
+            short edad = (short)nudEdad.Value;
+            if (edad < 18 || edad > 65)
+            {
+                MessageBox.Show("Edad no valida");
+            }
+            else
+            {
+                Programador programador = new Programador((short)nudLegajo.Value, txtNombre.Text, txtApellido.Text,
+                    (Genero)cmbGenero.SelectedItem, edad, (Puesto)cmbPuesto.SelectedItem);
             try
             {
-                Programador programador = new Programador((short)nudLegajo.Value,txtNombre.Text, txtApellido.Text, (Genero)cmbGenero.SelectedItem, (short)nudEdad.Value,(Puesto)cmbPuesto.SelectedItem);
-               //programador.Legajo = (short)nudLegajo.Value;
-                //programador.Edad = (short)nudEdad.Value;
+                proyecto += programador;
                 try
                 {
-                    proyecto += programador;
-                    try
-                    {
-                        SerializarAJson.Serializar(ruta, proyecto.Programadores);
-                        MessageBox.Show("Programador agregado");
-                    }
-                    catch (SerializarException ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
+                    SerializarAJson.Serializar(ruta, proyecto.Programadores);
+                    MessageBox.Show("Programador agregado");
                 }
-                catch (ProgramadorException ex)
+                catch (SerializarException ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
             }
-            catch(EdadException exc)
-            {
-                MessageBox.Show(exc.Message);
-            }
-            catch(LegajoValidarException ex)
+            catch (ProgramadorException ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

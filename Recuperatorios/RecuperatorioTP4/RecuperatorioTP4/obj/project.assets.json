@@ -459,11 +459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Juan\\Desktop\\RecuperatorioTP4\\RecuperatorioTP4\\Entidades.csproj",
+      "projectUniqueName": "C:\\Users\\Juan\\Desktop\\x\\tps_laboratorio_ii\\Recuperatorios\\RecuperatorioTP4\\RecuperatorioTP4\\Entidades.csproj",
       "projectName": "Entidades",
-      "projectPath": "C:\\Users\\Juan\\Desktop\\RecuperatorioTP4\\RecuperatorioTP4\\Entidades.csproj",
+      "projectPath": "C:\\Users\\Juan\\Desktop\\x\\tps_laboratorio_ii\\Recuperatorios\\RecuperatorioTP4\\RecuperatorioTP4\\Entidades.csproj",
       "packagesPath": "C:\\Users\\Juan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Juan\\Desktop\\RecuperatorioTP4\\RecuperatorioTP4\\obj\\",
+      "outputPath": "C:\\Users\\Juan\\Desktop\\x\\tps_laboratorio_ii\\Recuperatorios\\RecuperatorioTP4\\RecuperatorioTP4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Juan\\AppData\\Roaming\\NuGet\\NuGet.Config",

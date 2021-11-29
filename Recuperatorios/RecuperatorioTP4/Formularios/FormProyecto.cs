@@ -13,10 +13,10 @@ namespace Formularios
 {
     public partial class FormProyecto : Form
     {
-        Proyecto proyecto = new Proyecto();
+        
         List<Programador> lista = new List<Programador>();
-        string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Equipo.json";
-        string ruta2 = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Proyecto.json";
+        string ruta = "Equipo.json";
+        string ruta2 = "Proyecto.json";
         public FormProyecto()
         {
             InitializeComponent();
@@ -36,10 +36,8 @@ namespace Formularios
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
-            proyecto.Nombre = txtNombre.Text;
-            proyecto.Id = int.Parse(txtId.Text);
-            proyecto.GeneroJuego = (GeneroJuego)cmbGenero.SelectedItem;
-            proyecto.FechaLanzamiento =  this.dtpFecha.Value;
+            Proyecto proyecto = new Proyecto(txtNombre.Text, int.Parse(txtId.Text), (GeneroJuego)cmbGenero.SelectedItem,
+                this.dtpFecha.Value.Date);
             proyecto.Programadores = lista;
             try
             {
@@ -62,14 +60,13 @@ namespace Formularios
         {
             try
             {
-                
                 lista = SerializarAJson.Deserializar<List<Programador>>(ruta);
             }
             catch (SerializarException ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            this.dgvEquipo.DataSource = proyecto.Programadores;
+            this.dgvEquipo.DataSource = lista;
             this.btnCargar.Enabled = true;
             
         }

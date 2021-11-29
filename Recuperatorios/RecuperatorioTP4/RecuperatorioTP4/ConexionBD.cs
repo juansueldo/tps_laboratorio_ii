@@ -11,30 +11,34 @@ namespace Entidades
 {
     public static class ConexionBD
     {
-        private const string localHost = "JUAN";
+        private const string localHost = "Data Source=JUAN; Database = TP4RECUPERATORIO; Trusted_Connection = true;";
         private static SqlCommand comando;
-        private static SqlConnection conexion;
+        public static SqlConnection conexion = new SqlConnection();
 
         static ConexionBD()
         {
-            conexion = new SqlConnection(@"Server=" + localHost + "\\SQLEXPRESS; Database = TP4; Trusted_Connection = true;");
+            conexion.ConnectionString = localHost;
             comando = new SqlCommand();
             comando.CommandType = CommandType.Text;
             comando.Connection = conexion;
         }
-        public static Proyecto Leer()
+        public static List<Programador> Leer()
         {
             Proyecto proyecto = new Proyecto();
-            Programador programador;
+            Programador programador = new Programador();
             try
             {
-                comando.CommandText = "Select * from Programadores";
+                comando.CommandText = "Select * from ListaProgramadores";
                 conexion.Open();
                 SqlDataReader myReader = comando.ExecuteReader();
                 while (myReader.Read())
                 {
-                    programador = new Programador((short)myReader["idLegajo"],myReader["nombre"].ToString(), myReader["apellido"].ToString(),(Genero)myReader["genero"],
-                        (short)myReader["edad"],(Puesto)myReader["puesto"]);
+                    programador.Legajo = (short)myReader["idLegajo"];
+                    programador.Nombre = myReader["nombre"].ToString();
+                    programador.Apellido = myReader["apellido"].ToString();
+                    programador.Genero = (Genero)Enum.Parse(typeof(Genero),myReader["genero"].ToString());
+                    programador.Edad = (short)myReader["edad"]; 
+                    programador.Puesto = (Puesto)Enum.Parse(typeof(Puesto),myReader["puesto"].ToString());
                     proyecto += programador;
                 }
 
@@ -49,12 +53,12 @@ namespace Entidades
             {
                 conexion.Close();
             }
-            return proyecto;
+            return proyecto.Programadores;
         }
         public static bool Guardar(Programador programador)
         {
-            string insert = $"INSERT INTO Programadores(idLegajo,nombre,apellido,genero,puesto,edad) ";
-            string parameters = $" VALUES(@idLegajo,@nombre,@apellido,@genero,@puesto,@edad)";
+            string insert = $"INSERT INTO Programadores(idLegajo,nombre,apellido,genero,edad,puesto) ";
+            string parameters = $" VALUES(@idLegajo,@nombre,@apellido,@genero,@edad,@puesto)";
             string fullQuery = $"{insert}{parameters}";
 
             try
@@ -69,8 +73,8 @@ namespace Entidades
                 comando.Parameters.AddWithValue("@nombre", programador.Nombre);
                 comando.Parameters.AddWithValue("@apellido", programador.Apellido);
                 comando.Parameters.AddWithValue("@genero", (int)programador.Genero);
-                comando.Parameters.AddWithValue("@puesto", (int)programador.Puesto);
                 comando.Parameters.AddWithValue("@edad", (int)programador.Edad);
+                comando.Parameters.AddWithValue("@puesto", (int)programador.Puesto);
                 int rows = comando.ExecuteNonQuery();
                 return true;
             }
@@ -84,37 +88,6 @@ namespace Entidades
                 {
                     conexion.Close();
                 }
-            }
-        }
-        public static void Insertar(Programador p)
-        {
-            try
-            {
-                comando.Connection = conexion;
-                comando.CommandType = CommandType.Text;
-                comando.CommandText = "INSERT INTO Paquetes VALUES(@idLegajo, @nombre, @apellido, @genero, @puesto, @edad)";
-                comando.Parameters.Clear();
-                comando.Parameters.Add(new SqlParameter("nombre", p.Legajo));
-                comando.Parameters.Add(new SqlParameter("apellido", p.Nombre));
-                comando.Parameters.Add(new SqlParameter("genero", p.Apellido));
-                comando.Parameters.Add(new SqlParameter("puesto", p.Genero));
-                comando.Parameters.Add(new SqlParameter("legajo", p.Puesto));
-                comando.Parameters.Add(new SqlParameter("edad", p.Edad));
-                if (conexion.State != ConnectionState.Open)
-                {
-                    conexion.Open();
-                }
-
-                comando.ExecuteNonQuery();
-            }
-
-            catch (Exception ex)
-            {
-                throw new Exception("Error de SQL", ex);
-            }
-            finally
-            {
-                conexion.Close();
             }
         }
     }

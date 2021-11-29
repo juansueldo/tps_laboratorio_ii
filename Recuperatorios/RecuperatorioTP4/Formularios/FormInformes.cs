@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Entidades;
 using System.Threading;
 
+
 namespace Formularios
 {
     public partial class FormInformes : Form
@@ -19,19 +20,26 @@ namespace Formularios
         Thread hilo;
         delegate void delegado(int valor);
         delegate void delegadoString(string cadena);
-        string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Proyecto.json";
+        string ruta = "Proyecto.json";
 
         public FormInformes()
         {
             InitializeComponent();
             
         }
-
+        public void InformeGral(string dato)
+        {
+            if (InvokeRequired)
+            {
+                Invoke(new Action(() => rchTodo.Text = dato));
+            }
+            
+        }
         private void FormInformes_Load(object sender, EventArgs e)
         {
-            this.pbrFemenino.Maximum = proyecto.Programadores.Count;
-            this.pbrMasculino.Maximum = proyecto.Programadores.Count;
-            this.pbrNoBinario.Maximum = proyecto.Programadores.Count;
+            lblCountFemenino.Visible = false;
+            lblCountMasculino.Visible = false;
+            lblCountNoBinario.Visible = false;
         }
         #region Proceso 1
         public void Proceso1()
@@ -46,7 +54,8 @@ namespace Formularios
 
         public void Actualizar1(int valor)
         {
-            pbrFemenino.Value = valor;
+             pbrFemenino.Value = valor;
+             lblCountFemenino.Text = estadisticas.ProgramadoresFemeninos(proyecto).ToString();  
         }
 
         #endregion
@@ -65,6 +74,7 @@ namespace Formularios
         public void Actualizar2(int valor)
         {
             pbrMasculino.Value = valor;
+            lblCountMasculino.Text = estadisticas.ProgramadoresMasculinos(proyecto).ToString();
         }
 
         #endregion
@@ -83,32 +93,7 @@ namespace Formularios
         public void Actualizar3(int valor)
         {
             pbrNoBinario.Value = valor;
-        }
-        #endregion
-
-        #region Proceso  4
-        public void Proceso4()
-        {
-            delegadoString MD = new delegadoString(Datos);
-            this.Invoke(MD, new object[] { estadisticas.ProgramadoresPorPuesto(proyecto) });
-            Thread.Sleep(100);
-        }
-        public void Datos(string cadena)
-        {
-            this.rchTodo.Text = cadena;
-        }
-        #endregion
-
-        #region Proceso 5
-        public void Proceso5()
-        {
-            delegadoString delegado = new delegadoString(Rangos);
-            this.Invoke(delegado, new object[] { estadisticas.RangosEtarios(proyecto) });
-            Thread.Sleep(100);
-        }
-        public void Rangos(string cadena)
-        {
-            this.rchRangos.Text = cadena;
+            lblCountNoBinario.Text = estadisticas.ProgramadoresNoBinario(proyecto).ToString();
         }
         #endregion
 
@@ -116,7 +101,7 @@ namespace Formularios
         {
             try
             {
-                proyecto = SerializarAJson.Deserializar<Proyecto>("Proyectos.json");
+                proyecto = SerializarAJson.Deserializar<Proyecto>(ruta);
             }
             catch (SerializarException ex)
             {
@@ -126,15 +111,31 @@ namespace Formularios
             {
                 MessageBox.Show(exc.Message);
             }
+            this.pbrFemenino.Maximum = proyecto.Programadores.Count;
+            this.pbrMasculino.Maximum = proyecto.Programadores.Count; 
+            this.pbrNoBinario.Maximum = proyecto.Programadores.Count; 
+            lblCountFemenino.Visible = true;
+            lblCountMasculino.Visible = true;
+            lblCountNoBinario.Visible = true;
+
+            estadisticas.evento += new Informes.delegado(InformeGral);
+            try
+            {
+                Thread t = new Thread(() => estadisticas.InformeGeneral(proyecto));
+                t.Start();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+
+
             hilo = new Thread(new ThreadStart(Proceso1));
             hilo.Start();
             hilo = new Thread(new ThreadStart(Proceso2));
             hilo.Start();
             hilo = new Thread(new ThreadStart(Proceso3));
-            hilo.Start();
-            hilo = new Thread(new ThreadStart(Proceso4));
-            hilo.Start();
-            hilo = new Thread(new ThreadStart(Proceso5));
             hilo.Start();
         }
 

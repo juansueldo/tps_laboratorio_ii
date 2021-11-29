@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Entidades
 {
     public class Informes
     {
-        public int contadorDesigner = 0;
-        public int contadorArstist = 0;
-        public int contadorTester = 0;
+        public delegate void delegado(string dato);
+        public event delegado evento;
+        
+        #region Metodos por genero
         public int ProgramadoresFemeninos(Proyecto p)
         {
             int contador = 0;
@@ -47,8 +49,14 @@ namespace Entidades
             }
             return contador;
         }
+        #endregion
+
+        #region Analisis por Puesto
         public string ProgramadoresPorPuesto(Proyecto p)
         {
+            int contadorDesigner = 0;
+            int contadorArstist = 0;
+            int contadorTester = 0;
             StringBuilder sb = new StringBuilder();
             foreach (Programador item in p.Programadores)
             {
@@ -68,9 +76,11 @@ namespace Entidades
             sb.AppendLine($"Cantidad Designer: {contadorDesigner}");
             sb.AppendLine($"Cantidad Artist: {contadorArstist}");
             sb.AppendLine($"Cantidad Testers: {contadorTester}");
-
             return sb.ToString();
         }
+        #endregion
+
+        #region Analisis por Edad
         public string RangosEtarios(Proyecto p)
         {
             int contador1 = 0;
@@ -103,6 +113,27 @@ namespace Entidades
             sb.AppendLine($"Cantidad programadores mayores de 45: {contador4}");
 
             return sb.ToString();
+        }
+        #endregion
+        public void InformeGeneral(Proyecto p)
+        {
+            Texto t = new Texto();
+            do
+            {
+                evento("Cargando datos...");
+                Thread.Sleep(500);
+                evento(RangosEtarios(p));
+                Thread.Sleep(2000);
+                evento("Cargando datos...");
+                Thread.Sleep(500);
+                evento(ProgramadoresPorPuesto(p));
+                Thread.Sleep(2000);
+                evento("Guardando informe...");
+                Extensores.GuardarInformes(p);
+                Thread.Sleep(500);
+                evento("Informe guardado.");
+                break;
+            } while (true); 
         }
     }
 }

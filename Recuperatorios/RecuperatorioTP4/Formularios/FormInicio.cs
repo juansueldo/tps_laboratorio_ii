@@ -28,5 +28,24 @@ namespace Formularios
             FormInformes i = new FormInformes();
             i.Show();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FormInicio_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("¿Está seguro de querer salir?", "Salir", MessageBoxButtons.YesNo) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void btnMostrarTodo_Click(object sender, EventArgs e)
+        {
+            FormMostrarTodo m = new FormMostrarTodo();
+            m.Show();
+        }
     }
 }

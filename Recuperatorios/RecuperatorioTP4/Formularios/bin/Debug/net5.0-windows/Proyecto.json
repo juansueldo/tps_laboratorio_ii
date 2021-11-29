@@ -1,0 +1,64 @@
+{
+  "Nombre": "Final Fantasy XVI",
+  "Id": 1,
+  "Programadores": [
+    {
+      "Nombre": "John",
+      "Apellido": "Romero",
+      "Genero": "Masculino",
+      "Legajo": 1,
+      "Edad": 54,
+      "Puesto": "Designer"
+    },
+    {
+      "Nombre": "Hironobu",
+      "Apellido": "Sakaguchi",
+      "Genero": "Masculino",
+      "Legajo": 2,
+      "Edad": 59,
+      "Puesto": "Designer"
+    },
+    {
+      "Nombre": "Ed",
+      "Apellido": "Boon",
+      "Genero": "Masculino",
+      "Legajo": 3,
+      "Edad": 57,
+      "Puesto": "Designer"
+    },
+    {
+      "Nombre": "Dafne",
+      "Apellido": "Spector",
+      "Genero": "Femenino",
+      "Legajo": 4,
+      "Edad": 27,
+      "Puesto": "Artist"
+    },
+    {
+      "Nombre": "Alexia",
+      "Apellido": "Wright",
+      "Genero": "Femenino",
+      "Legajo": 5,
+      "Edad": 23,
+      "Puesto": "Artist"
+    },
+    {
+      "Nombre": "Stephanie",
+      "Apellido": "Molyneux",
+      "Genero": "NoBinario",
+      "Legajo": 21,
+      "Edad": 21,
+      "Puesto": "Tester"
+    },
+    {
+      "Nombre": "Gary",
+      "Apellido": "Jaffe",
+      "Genero": "NoBinario",
+      "Legajo": 7,
+      "Edad": 41,
+      "Puesto": "Tester"
+    }
+  ],
+  "FechaLanzamiento": "2022-11-24T00:00:00",
+  "GeneroJuego": "RPG"
+}

@@ -1,0 +1,17 @@
+Fecha y hora del informe:
+28/11/2021 22:44:55
+Programadores femeninos 2
+Programadores masculinos 3
+Programadores no binario 2
+---------------------------------------------------------------------------------------------------------
+Cantidad Designer: 3
+Cantidad Artist: 2
+Cantidad Testers: 2
+
+---------------------------------------------------------------------------------------------------------
+Cantidad programadores rango etario de 18 a 24: 2
+Cantidad programadores rango etario de 25 a 34: 1
+Cantidad programadores rango etario de  35 a 44: 1
+Cantidad programadores mayores de 45: 3
+
+

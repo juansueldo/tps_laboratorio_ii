@@ -36,19 +36,24 @@ namespace Formularios
             this.pbrNoBinario = new System.Windows.Forms.ProgressBar();
             this.lblFemenino = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblCountFemenino = new System.Windows.Forms.Label();
+            this.lblCountNoBinario = new System.Windows.Forms.Label();
+            this.lblCountMasculino = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblNoBinario = new System.Windows.Forms.Label();
             this.lblMasculino = new System.Windows.Forms.Label();
-            this.rchRangos = new System.Windows.Forms.RichTextBox();
             this.btnAtras = new System.Windows.Forms.Button();
             this.btnJson = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // rchTodo
             // 
-            this.rchTodo.Location = new System.Drawing.Point(27, 241);
+            this.rchTodo.Location = new System.Drawing.Point(17, 22);
             this.rchTodo.Name = "rchTodo";
-            this.rchTodo.Size = new System.Drawing.Size(364, 164);
+            this.rchTodo.Size = new System.Drawing.Size(395, 175);
             this.rchTodo.TabIndex = 0;
             this.rchTodo.Text = "";
             // 
@@ -85,6 +90,10 @@ namespace Formularios
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblCountFemenino);
+            this.groupBox1.Controls.Add(this.lblCountNoBinario);
+            this.groupBox1.Controls.Add(this.lblCountMasculino);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.lblNoBinario);
             this.groupBox1.Controls.Add(this.lblMasculino);
             this.groupBox1.Controls.Add(this.pbrFemenino);
@@ -97,6 +106,47 @@ namespace Formularios
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Estadisticas por genero";
+            // 
+            // lblCountFemenino
+            // 
+            this.lblCountFemenino.AutoSize = true;
+            this.lblCountFemenino.BackColor = System.Drawing.Color.Silver;
+            this.lblCountFemenino.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCountFemenino.Location = new System.Drawing.Point(103, 32);
+            this.lblCountFemenino.Name = "lblCountFemenino";
+            this.lblCountFemenino.Size = new System.Drawing.Size(57, 21);
+            this.lblCountFemenino.TabIndex = 26;
+            this.lblCountFemenino.Text = "label4";
+            // 
+            // lblCountNoBinario
+            // 
+            this.lblCountNoBinario.AutoSize = true;
+            this.lblCountNoBinario.BackColor = System.Drawing.Color.Silver;
+            this.lblCountNoBinario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCountNoBinario.Location = new System.Drawing.Point(103, 168);
+            this.lblCountNoBinario.Name = "lblCountNoBinario";
+            this.lblCountNoBinario.Size = new System.Drawing.Size(57, 21);
+            this.lblCountNoBinario.TabIndex = 26;
+            this.lblCountNoBinario.Text = "label3";
+            // 
+            // lblCountMasculino
+            // 
+            this.lblCountMasculino.AutoSize = true;
+            this.lblCountMasculino.BackColor = System.Drawing.Color.Silver;
+            this.lblCountMasculino.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCountMasculino.Location = new System.Drawing.Point(103, 98);
+            this.lblCountMasculino.Name = "lblCountMasculino";
+            this.lblCountMasculino.Size = new System.Drawing.Size(57, 21);
+            this.lblCountMasculino.TabIndex = 19;
+            this.lblCountMasculino.Text = "label2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(103, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 15);
+            this.label1.TabIndex = 18;
             // 
             // lblNoBinario
             // 
@@ -117,14 +167,6 @@ namespace Formularios
             this.lblMasculino.Size = new System.Drawing.Size(89, 21);
             this.lblMasculino.TabIndex = 16;
             this.lblMasculino.Text = "Masculino";
-            // 
-            // rchRangos
-            // 
-            this.rchRangos.Location = new System.Drawing.Point(428, 241);
-            this.rchRangos.Name = "rchRangos";
-            this.rchRangos.Size = new System.Drawing.Size(360, 164);
-            this.rchRangos.TabIndex = 17;
-            this.rchRangos.Text = "";
             // 
             // btnAtras
             // 
@@ -148,16 +190,25 @@ namespace Formularios
             this.btnJson.UseVisualStyleBackColor = true;
             this.btnJson.Click += new System.EventHandler(this.btnJson_Click);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rchTodo);
+            this.groupBox2.Location = new System.Drawing.Point(160, 241);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(429, 209);
+            this.groupBox2.TabIndex = 26;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Informe";
+            // 
             // FormInformes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 463);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnJson);
             this.Controls.Add(this.btnAtras);
-            this.Controls.Add(this.rchRangos);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.rchTodo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -167,6 +218,7 @@ namespace Formularios
             this.Load += new System.EventHandler(this.FormInformes_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -184,5 +236,10 @@ namespace Formularios
         private System.Windows.Forms.RichTextBox rchRangos;
         private System.Windows.Forms.Button btnAtras;
         private System.Windows.Forms.Button btnJson;
+        private System.Windows.Forms.Label lblCountFemenino;
+        private System.Windows.Forms.Label lblCountNoBinario;
+        private System.Windows.Forms.Label lblCountMasculino;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

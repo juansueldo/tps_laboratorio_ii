@@ -7,13 +7,15 @@ namespace TestTP4
     {
         static void Main(string[] args)
         {
+            Texto t = new Texto();
             Proyecto proyecto = new Proyecto("Final Fantasy XVI", 5, GeneroJuego.RPG, DateTime.Today);
             Proyecto proyecto2 = new Proyecto();
             Programador p1 = new Programador(1, "Juan", "Sueldo", Genero.Masculino, 32, Puesto.Tester);
             Programador p2 = new Programador(2, "Tetsuya", "Nomura", Genero.Masculino, 51, Puesto.Designer);
             Programador p3 = new Programador(3, "Hironobu", "Sakaguchi", Genero.Masculino, 58, Puesto.Designer);
             Programador p4 = new Programador(4, "Yoshitaka", "Amano", Genero.Masculino, 69, Puesto.Artist);
-            string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Proyecto.json";
+            //string rutaEquipo = "Equipo.json";
+            string rutaProyecto = "Proyecto.json";
             try
             {
                 proyecto += p1;
@@ -54,10 +56,18 @@ namespace TestTP4
             {
                 Console.WriteLine(ex.Message);
             }
-            //Console.WriteLine(proyecto.MostrarProyecto());
             try
             {
-                SerializarAJson.Serializar(ruta, proyecto);
+                SerializarAJson.Serializar(rutaProyecto, proyecto);
+                try
+                {
+                    t.Escribir(proyecto.MostrarProyecto(), ruta2);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                
                 Console.WriteLine("Projecto guardado");
             }
             catch(SerializarException e)
@@ -71,7 +81,8 @@ namespace TestTP4
             Console.ReadKey();
             try
             {
-                proyecto2 = SerializarAJson.Deserializar<Proyecto>(ruta);
+                proyecto2 = SerializarAJson.Deserializar<Proyecto>(rutaProyecto);
+                Console.WriteLine(proyecto2.MostrarProyecto());
             }
             catch (SerializarException e)
             {
@@ -81,7 +92,7 @@ namespace TestTP4
             {
                 Console.WriteLine(ex.Message);
             }
-            Console.WriteLine(proyecto2.MostrarProyecto());
+            
             Console.ReadKey();
         }
     }
