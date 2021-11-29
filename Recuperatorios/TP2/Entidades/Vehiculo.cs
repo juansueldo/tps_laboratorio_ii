@@ -57,7 +57,6 @@ namespace Entidades
         /// <param name="v2"></param>
         /// <returns></returns>
         public static bool operator ==(Vehiculo v1, Vehiculo v2)
-        public static bool operator ==(Vehiculo v1, Vehiculo v2)
         {
             bool retorno = false;
             if(!(v1 is null) && !(v2 is null))
