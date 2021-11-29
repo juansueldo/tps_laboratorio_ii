@@ -57,8 +57,14 @@ namespace Entidades
         /// <param name="v2"></param>
         /// <returns></returns>
         public static bool operator ==(Vehiculo v1, Vehiculo v2)
+        public static bool operator ==(Vehiculo v1, Vehiculo v2)
         {
-            return (v1.chasis == v2.chasis);
+            bool retorno = false;
+            if(!(v1 is null) && !(v2 is null))
+            {
+                retorno = String.Compare(v1.chasis, v2.chasis) == 0;
+            }
+            return retorno;
         }
         /// <summary>
         /// Dos vehiculos son distintos si su chasis es distinto
