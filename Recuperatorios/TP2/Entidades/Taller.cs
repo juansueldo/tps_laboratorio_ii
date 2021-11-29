@@ -117,15 +117,20 @@ namespace Entidades
         /// <returns></returns>
         public static Taller operator -(Taller taller, Vehiculo vehiculo)
         {
-            foreach (Vehiculo v in taller.vehiculos)
+            if(!(taller is null) && !(vehiculo is null))
             {
-                if (v == vehiculo || v.GetType() == vehiculo.GetType())
+                if(taller.vehiculos.Count > 0)
                 {
-                    taller.vehiculos.Remove(v);
-                    break;
+                    foreach (Vehiculo v in taller.vehiculos)
+                    {
+                        if (v == vehiculo || v.GetType() == vehiculo.GetType())
+                        {
+                            taller.vehiculos.Remove(v);
+                            break;
+                        }
+                    }
                 }
             }
-
             return taller;
         }
         #endregion
