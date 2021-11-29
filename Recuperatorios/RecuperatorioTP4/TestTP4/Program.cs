@@ -1,5 +1,8 @@
-﻿using System;
+using System;
 using Entidades;
+using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
 
 namespace TestTP4
 {
@@ -14,13 +17,13 @@ namespace TestTP4
             Programador p2 = new Programador(2, "Tetsuya", "Nomura", Genero.Masculino, 51, Puesto.Designer);
             Programador p3 = new Programador(3, "Hironobu", "Sakaguchi", Genero.Masculino, 58, Puesto.Designer);
             Programador p4 = new Programador(4, "Yoshitaka", "Amano", Genero.Masculino, 69, Puesto.Artist);
-            //string rutaEquipo = "Equipo.json";
-            string rutaProyecto = "Proyecto.json";
+            string rutaJson = "Proyecto.json";
+            string rutaTxt = "Proyecto.txt";
             try
             {
                 proyecto += p1;
             }
-            catch(ProgramadorException ex)
+            catch (ProgramadorException ex)
             {
                 Console.WriteLine(ex.Message);
             }
@@ -58,30 +61,31 @@ namespace TestTP4
             }
             try
             {
-                SerializarAJson.Serializar(rutaProyecto, proyecto);
+                SerializarAJson.Serializar(rutaJson, proyecto);
                 try
                 {
-                    t.Escribir(proyecto.MostrarProyecto(), ruta2);
+                    t.Escribir(proyecto.MostrarProyecto(), rutaTxt);
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
-                
+
                 Console.WriteLine("Projecto guardado");
+                Console.WriteLine(proyecto.MostrarProyecto());
             }
-            catch(SerializarException e)
+            catch (SerializarException e)
             {
                 Console.WriteLine(e.Message);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
             Console.ReadKey();
             try
             {
-                proyecto2 = SerializarAJson.Deserializar<Proyecto>(rutaProyecto);
+                proyecto2 = SerializarAJson.Deserializar<Proyecto>(rutaJson);
                 Console.WriteLine(proyecto2.MostrarProyecto());
             }
             catch (SerializarException e)
@@ -92,7 +96,7 @@ namespace TestTP4
             {
                 Console.WriteLine(ex.Message);
             }
-            
+
             Console.ReadKey();
         }
     }
